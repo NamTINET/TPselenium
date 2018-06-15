@@ -50,7 +50,7 @@ public class LibraryTest {
 	   driver.findElement(By.xpath(xpathlink)).click();
 	   WebElement title = driver.findElement(By.id("idtitle"));*/
 	   
-	   /*WebDriver driver = new ChromeDriver();
+	   WebDriver driver = new ChromeDriver();
 	   
 	   driver.get("https://en.wikipedia.org/wiki/Main_Page");
 	   
@@ -66,7 +66,7 @@ public class LibraryTest {
 	   Assert.assertEquals("FIFA World Cup", driver.findElement(By.id("firstHeader")));
 	   
 	   
-	  // WebElement imageCoupe = driver.findElement(By.id("dimg_29"));
+	/*  // WebElement imageCoupe = driver.findElement(By.id("dimg_29"));
 	  // Assert.assertTrue(imageCoupe.isDisplayed());
 	   //imageCoupe.isDisplayed();*/
 	   
@@ -76,6 +76,10 @@ public class LibraryTest {
 	  
    }
    
+   @Test
+   public void testFail() {
+	   Assert.fail();
+   }
    @AfterClass
    public static  void closeBrowser()
    {
